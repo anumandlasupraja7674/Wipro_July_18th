@@ -1,0 +1,21 @@
+
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="User Suite" verbose="1">
+<parameter name="browser" value="edge"/>
+    <parameter name="platform" value="windows"/>
+    <test name="Sanity and Smoke Tests">
+        <groups>
+            <run>
+                <include name="Sanity"/>
+                <include name="Smoke"/>
+                <exclude name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.wipro.selenium2.labsession16august_Q2"/>
+        </classes>
+    </test>
+</suite>
+
